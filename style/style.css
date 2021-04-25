@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: hidden;
+}
+
+body .nav {
+  position: fixed;
+  width: 20%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f9f9f9;
+}
+
+body .nav .logo {
+  margin: 50px 0;
+  text-align: center;
+}
+
+body .nav .logo img {
+  width: 150px;
+}
+
+body .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .nav-menu .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .nav-menu .nav-list ul {
+  padding: 10px 20px;
+}
+
+body .nav-menu .nav-list li {
+  list-style: none;
+  padding: 20px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: background 0.5s linear;
+  transition: background 0.5s linear;
+}
+
+body .nav-menu .nav-list li:hover {
+  background-color: #dbd9d9;
+}
+
+body .nav-menu .nav-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+body .nav-menu .nav-list li a .fas {
+  width: 50px;
+  font-size: 25px;
+}
+
+body .nav-menu .nav-list .aboutme {
+  margin-top: 90px;
+}
+
+body main {
+  margin-left: 20%;
+  width: 80%;
+}
+
+body main .banner {
+  position: relative;
+}
+
+body main .banner img {
+  width: 1100px;
+}
+
+body main .banner h1 {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: white;
+  font-size: 4rem;
+  line-height: 60px;
+}
+
+body main h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+body main .film-poster {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body main .film-poster ul {
+  list-style: none;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+body main .film-poster ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body main .film-poster ul li::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+body main .film-poster ul li:hover::before {
+  opacity: 1;
+}
+
+body main .film-poster ul li img {
+  width: 300px;
+}
+
+body main .film-poster ul p {
+  color: white;
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  text-align: center;
+}
+
+body main .film-poster ul:hover p {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
