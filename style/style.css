@@ -113,6 +113,8 @@ body main .banner h1 {
   color: white;
   font-size: 4rem;
   line-height: 60px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 body main h2 {
@@ -138,6 +140,9 @@ body main .film-poster ul {
   list-style: none;
   margin-bottom: 30px;
   position: relative;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  opacity: 0;
 }
 
 body main .film-poster ul li {
